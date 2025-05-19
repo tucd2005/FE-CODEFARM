@@ -1,15 +1,31 @@
-import { createBrowserRouter, Link } from "react-router-dom"
-import App from './../App';
+import { createBrowserRouter, Link } from "react-router-dom";
 
-
+import LoginPage from "../pages/LoginPage";
+import HomePage from "../pages/HomePage";
+import RegisterPage from "../pages/RegisterPage";
 
 export const router = createBrowserRouter([
   {
-    path: "/",
+    path: "/login",
     element: (
-      <div>
-        <h1>Hello World</h1>
-        <Link to="about">About Us</Link>
+      <div className="wapper">
+        <LoginPage />
+      </div>
+    ),
+  },
+  {
+    path: "/register",
+    element: (
+      <div className="wapper">
+        <RegisterPage />
+      </div>
+    ),
+  },
+  {
+    path: "/home",
+    element: (
+      <div className="wapper">
+        <HomePage />
       </div>
     ),
   },
@@ -18,5 +34,3 @@ export const router = createBrowserRouter([
     element: <div>About</div>,
   },
 ]);
-
-
