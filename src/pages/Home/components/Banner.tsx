@@ -1,4 +1,4 @@
-import img_banner from "../assets/images/img_banner.webp";
+import img_banner from "../../../assets/images/img_banner.webp";
 const Banner = () => {
   return (
     <section className="relative overflow-hidden">

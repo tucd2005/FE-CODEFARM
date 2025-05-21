@@ -1,36 +1,27 @@
-import { createBrowserRouter, Link } from "react-router-dom";
+import { createBrowserRouter } from "react-router-dom";
 
 import LoginPage from "../pages/LoginPage";
-import HomePage from "../pages/HomePage";
 import RegisterPage from "../pages/RegisterPage";
+import MainLayout from "../layouts/MainLayout";
+import HomePage from "../pages/Home/HomePage";
 
 export const router = createBrowserRouter([
   {
-    path: "/login",
-    element: (
-      <div className="wapper">
-        <LoginPage />
-      </div>
-    ),
-  },
-  {
-    path: "/register",
-    element: (
-      <div className="wapper">
-        <RegisterPage />
-      </div>
-    ),
-  },
-  {
-    path: "/home",
-    element: (
-      <div className="wapper">
-        <HomePage />
-      </div>
-    ),
-  },
-  {
-    path: "about",
-    element: <div>About</div>,
+    path: "/",
+    element: <MainLayout />,
+    children: [
+      {
+        path: "home",
+        element: <HomePage />,
+      },
+      {
+        path: "login",
+        element: <LoginPage />,
+      },
+      {
+        path: "register",
+        element: <RegisterPage />,
+      },
+    ],
   },
 ]);

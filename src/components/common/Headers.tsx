@@ -1,8 +1,9 @@
-import ico_search from "../assets/images/ico_search.png";
-import ico_user from "../assets/images/ico_user.png";
-import ico_heart from "../assets/images/ico_heart.png";
-import ico_bag from "../assets/images/ico_bag.png";
-import logo from "../assets/images/logo.webp";
+import ico_search from "../../assets/images/ico_search.png";
+import ico_user from "../../assets/images/ico_user.png";
+import ico_heart from "../../assets/images/ico_heart.png";
+import ico_bag from "../../assets/images/ico_bag.png";
+import logo from "../../assets/images/logo.webp";
+import { Link } from "react-router-dom";
 
 const Headers = () => {
   return (
@@ -10,9 +11,9 @@ const Headers = () => {
       <header className="py-5 lg:py-8 sticky top-0 z-10 bg-white shadow-lg">
         <div className="container flex items-center">
           <h1 className="flex-shrink-0 mr-5">
-            <a className="block max-w-[130px]" href="index.html">
+            <Link to="/home" className="block max-w-[130px]">
               <img className="max-w-full" src={logo} alt="Darion" />
-            </a>
+            </Link>
           </h1>
 
           <div className="relative ml-auto lg:mr-20 max-w-[500px] w-full hidden xl:block">
@@ -31,7 +32,9 @@ const Headers = () => {
           <nav className="mr-28 hidden lg:block ml-auto">
             <ul className="flex items-center gap-10">
               <li className="relative after:absolute after:h-[1.5px] after:bg-black after:left-0 after:bottom-[-2px] after:transition-all after:duration-300 after:w-full after:scale-x-0 hover:after:-scale-x-100">
-                <a href="index.html">Trang chủ</a>
+                <Link to="/home">
+                  <a>Trang chủ</a>
+                </Link>
               </li>
               <li className="relative after:absolute after:h-[1.5px] after:bg-black after:left-0 after:bottom-[-2px] after:transition-all after:duration-300 after:w-full after:scale-x-0 hover:after:-scale-x-100">
                 <a href="product-list.html">Shop</a>

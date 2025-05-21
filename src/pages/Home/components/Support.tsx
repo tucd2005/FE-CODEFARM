@@ -1,7 +1,7 @@
-import ico_freeship from "../assets/images/ico_freeship.svg";
-import ico_quality from "../assets/images/ico_quality.svg";
-import ico_return from "../assets/images/ico_return.svg";
-import ico_support from "../assets/images/ico_support.svg";
+import ico_freeship from "../../../assets/images/ico_freeship.svg";
+import ico_quality from "../../../assets/images/ico_quality.svg";
+import ico_return from "../../../assets/images/ico_return.svg";
+import ico_support from "../../../assets/images/ico_support.svg";
 
 const Support = () => {
   return (

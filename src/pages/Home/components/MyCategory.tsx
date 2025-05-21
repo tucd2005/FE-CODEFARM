@@ -1,6 +1,6 @@
-import img_collection from "../assets/images/img_collection.jpg";
-import img_collection2 from "../assets/images/img_collection2.webp";
-import img_collection3 from "../assets/images/img_collection3.webp";
+import img_collection from "../../../assets/images/img_collection.jpg";
+import img_collection2 from "../../../assets/images/img_collection2.webp";
+import img_collection3 from "../../../assets/images/img_collection3.webp";
 const MyCategory = () => {
   return (
     <div>
