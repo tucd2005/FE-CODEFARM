@@ -1,7 +1,13 @@
-import React from "react";
+import BannerShop from "./components/BannerShop";
+import MainShop from "./components/MainShop";
 
 const ShopPage = () => {
-  return <div>ShopPage</div>;
+  return (
+    <>
+      <BannerShop />
+      <MainShop />
+    </>
+  );
 };
 
 export default ShopPage;
