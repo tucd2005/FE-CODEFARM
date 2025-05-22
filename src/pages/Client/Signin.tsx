@@ -6,7 +6,7 @@ const SignIn = () => {
   const [password, setPassword] = useState("");
   const [showPassword, setShowPassword] = useState(false);
 
-//   if (!isOpen) return null;
+  // if (!isOpen) return null;
 
   return (
     <div className="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50 z-50">
@@ -85,7 +85,7 @@ const SignIn = () => {
               type="button"
               className="w-full mt-4 py-3 bg-gray-500 text-white rounded-full font-semibold"
             >
-              CREATE AN ACCOUNT
+             <a href="/register">CREATE AN ACCOUNT</a> 
             </button>
           </form>
         </div>

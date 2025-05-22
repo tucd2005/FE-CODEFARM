@@ -1,6 +1,9 @@
-import React from 'react'
+import React, { useState } from 'react'
 
 const Register = () => {
+
+  // const [register, setRegister] = useState[""]
+
   return (
     <div>
         
@@ -10,7 +13,7 @@ const Register = () => {
         {/* Hình ảnh đầu form */}
         <div
           className="h-40 bg-cover bg-center"
-          style={{ backgroundImage: `url('/sofa.jpg')` }} // bạn thay bằng ảnh sofa bạn có
+          style={{ backgroundImage: `url('https://images.unsplash.com/photo-1600585154340-be6161a56a0c')` }} // bạn thay bằng ảnh sofa bạn có
         >
           <button
             // onClick={onClose}
@@ -50,7 +53,8 @@ const Register = () => {
           </button>
 
           <button className="w-full bg-gray-600 text-white py-3 rounded-full font-medium">
-            ALREADY HAS AN ACCOUNT
+            <a href="/signin">ALREADY HAS AN ACCOUNT</a>
+            
           </button>
         </div>
       </div>
