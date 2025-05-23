@@ -1,0 +1,89 @@
+{
+    "categories": [
+    {
+      "id": 1,
+      "name": "Điện thoại",
+      "slug": "dien-thoai",
+      "image": "https://noithattamviet.net/public/images/products/ghe-sofa-don-sd-17-1727663622.jpg"
+    },
+    {
+      "id": 2,
+      "name": "Laptop",
+      "slug": "laptop",
+      "image": "https://via.placeholder.com/100x100.png?text=Laptop"
+    },
+    {
+      "id": 3,
+      "name": "Phụ kiện",
+      "slug": "phu-kien",
+      "image": "https://via.placeholder.com/100x100.png?text=Phụ+kiện"
+    },
+    {
+      "id": 3,
+      "name": "Phụ kiện",
+      "slug": "phu-kien",
+      "image": "https://via.placeholder.com/100x100.png?text=Phụ+kiện"
+    },
+    {
+      "id": 3,
+      "name": "Phụ kiện",
+      "slug": "phu-kien",
+      "image": "https://via.placeholder.com/100x100.png?text=Phụ+kiện"
+    },
+    {
+      "id": 3,
+      "name": "Phụ kiện",
+      "slug": "phu-kien",
+      "image": "https://via.placeholder.com/100x100.png?text=Phụ+kiện"
+    },
+    {
+      "id": 3,
+      "name": "Phụ kiện",
+      "slug": "phu-kien",
+      "image": "https://via.placeholder.com/100x100.png?text=Phụ+kiện"
+    }
+  ],
+    "users": [
+      {
+        "id": 1,
+        "name": "Nguyễn Văn A",
+        "email": "a@gmail.com",
+        "role": "admin"
+      },
+      {
+        "id": 2,
+        "name": "Trần Thị B",
+        "email": "b@gmail.com",
+        "role": "user"
+      }
+    ],
+    "orders": [
+      {
+        "id": 101,
+        "userId": 1,
+        "total": 54000000,
+        "status": "Đã giao"
+      },
+      {
+        "id": 102,
+        "userId": 2,
+        "total": 33000000,
+        "status": "Chờ xác nhận"
+      }
+    ],
+    "posts": [
+      {
+        "id": 1,
+        "title": "Top 5 smartphone đáng mua 2025",
+        "content": "Nội dung chi tiết...",
+        "createdAt": "2025-05-01"
+      },
+      {
+        "id": 2,
+        "title": "Khuyến mãi tháng 5",
+        "content": "Giảm giá đến 50%...",
+        "createdAt": "2025-05-15"
+      }
+    ]
+  }
+  
