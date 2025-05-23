@@ -4,11 +4,12 @@ import LoginPage from "../pages/LoginPage";
 import RegisterPage from "../pages/RegisterPage";
 import MainLayout from "../layouts/MainLayout";
 import HomePage from "../pages/Home/HomePage";
+import ShopPage from "../pages/Shop/ShopPage";
+import PageDetail from "../pages/DetailProducts/PageDetail";
+import LayoutAdmin from "../pages/Admin/LayoutAdmin";
 import Dashboard from "../pages/Admin/Dashboard";
-import LayoutAdmin from './../pages/Admin/LayoutAdmin';
 import Categories from "../pages/Admin/Categories";
 import Products from "../pages/Admin/Products";
-
 
 export const router = createBrowserRouter([
   {
@@ -16,7 +17,7 @@ export const router = createBrowserRouter([
     element: <MainLayout />,
     children: [
       {
-        path: "home",
+        path: "",
         element: <HomePage />,
       },
       {
@@ -26,6 +27,14 @@ export const router = createBrowserRouter([
       {
         path: "register",
         element: <RegisterPage />,
+      },
+      {
+        path: "shop",
+        element: <ShopPage />,
+      },
+      {
+        path: "detail",
+        element: <PageDetail />,
       },
     ],
   },
