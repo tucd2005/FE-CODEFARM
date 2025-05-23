@@ -32,31 +32,31 @@ const menuItems = [
     key: 'products',
     icon: <ShoppingOutlined />,
     label: 'Quản lí Sản phẩm',
-    path: '/products',
+    path: '/admin/products',
   },
   {
     key: 'users',
     icon: <UserOutlined />,
     label: 'Quản lý người dùng',
-    path: '/users',
+    path: '/admin/users',
   },
   {
     key: 'orders',
     icon: <OrderedListOutlined />,
     label: 'Quản lý đơn hàng',
-    path: '/orders',
+    path: '/admin/orders',
   },
   {
     key: 'posts',
     icon: <FileTextOutlined />,
     label: 'Quản lý bài viết / tin tức',
-    path: '/posts',
+    path: '/admin/posts',
   },
   {
     key: 'roles',
     icon: <SafetyOutlined />,
     label: 'Quản lý quyền & vai trò',
-    path: '/roles',
+    path: '/admin/roles',
   },
 ];
 
