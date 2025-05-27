@@ -7,6 +7,7 @@ import ico_star_gray from "../../../assets/images/ico_star_gray.png";
 import ico_heart from "../../../assets/images/ico_heart.png";
 import ico_reload from "../../../assets/images/ico_reload.png";
 import ico_search from "../../../assets/images/ico_search.png";
+import { Link } from "react-router-dom";
 
 const MyProduct = () => {
   return (
@@ -30,7 +31,7 @@ const MyProduct = () => {
 
           <ul className="mt-8 lg:grid grid-cols-4 gap-7">
             <li className="mt-6 md:mt-0 text-center group relative">
-              <a href="product-detail.html" className="bg-red">
+              <Link to="detail" className="bg-red">
                 <span className="absolute py-1 text-xs px-2 top-3 left-3 bg-black text-white rounded-xl">
                   Out of stock
                 </span>
@@ -113,15 +114,15 @@ const MyProduct = () => {
                     <div className="flex items-center justify-center font-bold text-15 text-center">
                       <span className="">$70.00</span>
                     </div>
-                    <a
-                      href="#none"
+                    <Link
+                      to="/detail"
                       className="uppercase text-xs font-medium tracking-widest relative before:absolute before:bottom-0 before:w-0 before:h-[1px] before:bg-black before:left-0 hover:before:w-full before:transition-all before:duration-500"
                     >
                       Add to cart
-                    </a>
+                    </Link>
                   </div>
                 </div>
-              </a>
+              </Link>
             </li>
 
             <li className="mt-6 md:mt-0 text-center group relative">

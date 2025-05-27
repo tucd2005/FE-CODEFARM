@@ -11,7 +11,7 @@ const Headers = () => {
       <header className="py-5 lg:py-8 sticky top-0 z-10 bg-white shadow-lg">
         <div className="container flex items-center">
           <h1 className="flex-shrink-0 mr-5">
-            <Link to="/home" className="block max-w-[130px]">
+            <Link to="/" className="block max-w-[130px]">
               <img className="max-w-full" src={logo} alt="Darion" />
             </Link>
           </h1>
@@ -32,21 +32,21 @@ const Headers = () => {
           <nav className="mr-28 hidden lg:block ml-auto">
             <ul className="flex items-center gap-10">
               <li className="relative after:absolute after:h-[1.5px] after:bg-black after:left-0 after:bottom-[-2px] after:transition-all after:duration-300 after:w-full after:scale-x-0 hover:after:-scale-x-100">
-                <Link to="/home">
-                  <a>Trang chủ</a>
+                <Link to="/">
+                  <a>Home</a>
                 </Link>
               </li>
               <li className="relative after:absolute after:h-[1.5px] after:bg-black after:left-0 after:bottom-[-2px] after:transition-all after:duration-300 after:w-full after:scale-x-0 hover:after:-scale-x-100">
-                <a href="product-list.html">Shop</a>
+                <Link to="/shop">Product</Link>
               </li>
               <li className="relative after:absolute after:h-[1.5px] after:bg-black after:left-0 after:bottom-[-2px] after:transition-all after:duration-300 after:w-full after:scale-x-0 hover:after:-scale-x-100">
-                <a href="#none">Product</a>
+                <Link to="/shop">Contact</Link>
               </li>
               <li className="relative after:absolute after:h-[1.5px] after:bg-black after:left-0 after:bottom-[-2px] after:transition-all after:duration-300 after:w-full after:scale-x-0 hover:after:-scale-x-100">
-                <a href="#none">Bài viết</a>
+                <a href="#none">Blog</a>
               </li>
               <li className="relative after:absolute after:h-[1.5px] after:bg-black after:left-0 after:bottom-[-2px] after:transition-all after:duration-300 after:w-full after:scale-x-0 hover:after:-scale-x-100">
-                <a href="#none">Tính năng</a>
+                <a href="#none">Hotline</a>
               </li>
             </ul>
           </nav>

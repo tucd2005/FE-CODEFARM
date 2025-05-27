@@ -10,6 +10,7 @@ import LayoutAdmin from "../pages/Admin/LayoutAdmin";
 import Dashboard from "../pages/Admin/Dashboard";
 import Categories from "../pages/Admin/Categories";
 import Products from "../pages/Admin/Products";
+import CardPage from "../pages/Card/CardPage";
 
 export const router = createBrowserRouter([
   {
@@ -36,24 +37,28 @@ export const router = createBrowserRouter([
         path: "detail",
         element: <PageDetail />,
       },
+      {
+        path: "card",
+        element: <CardPage />,
+      },
     ],
   },
   {
     path: "/admin",
-    element: <LayoutAdmin/>,
+    element: <LayoutAdmin />,
     children: [
       {
         path: "dashboard",
-        element: <Dashboard/>
+        element: <Dashboard />,
       },
       {
         path: "categories",
-        element: <Categories/>
+        element: <Categories />,
       },
       {
         path: "products",
-        element: <Products/>
+        element: <Products />,
       },
-    ]
-  }
+    ],
+  },
 ]);
