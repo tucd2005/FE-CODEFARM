@@ -11,6 +11,7 @@ import Dashboard from "../pages/Admin/Dashboard";
 import Categories from "../pages/Admin/Categories";
 import Products from "../pages/Admin/Products";
 import CardPage from "../pages/Card/CardPage";
+import OrderDetailPage from "../pages/OrderDetail/OrderDetailPage";
 
 export const router = createBrowserRouter([
   {
@@ -40,6 +41,10 @@ export const router = createBrowserRouter([
       {
         path: "card",
         element: <CardPage />,
+      },
+      {
+        path: "order",
+        element: <OrderDetailPage />,
       },
     ],
   },

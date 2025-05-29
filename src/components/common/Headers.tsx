@@ -31,22 +31,22 @@ const Headers = () => {
 
           <nav className="mr-28 hidden lg:block ml-auto">
             <ul className="flex items-center gap-10">
-              <li className="relative after:absolute after:h-[1.5px] after:bg-black after:left-0 after:bottom-[-2px] after:transition-all after:duration-300 after:w-full after:scale-x-0 hover:after:-scale-x-100">
+              <li className="relative after:absolute after:h-[1.5px] after:bg-black after:left-0 after:bottom-[-2px] after:transition-all after:duration-300 after:w-full after:scale-x-0 hover:after:-scale-x-100 text-[14px]">
                 <Link to="/">
                   <a>Home</a>
                 </Link>
               </li>
-              <li className="relative after:absolute after:h-[1.5px] after:bg-black after:left-0 after:bottom-[-2px] after:transition-all after:duration-300 after:w-full after:scale-x-0 hover:after:-scale-x-100">
+              <li className="relative after:absolute after:h-[1.5px] after:bg-black after:left-0 after:bottom-[-2px] after:transition-all after:duration-300 after:w-full after:scale-x-0 hover:after:-scale-x-100 text-[14px]">
+                <Link to="/shop">Shop</Link>
+              </li>
+              <li className="relative after:absolute after:h-[1.5px] after:bg-black after:left-0 after:bottom-[-2px] after:transition-all after:duration-300 after:w-full after:scale-x-0 hover:after:-scale-x-100 text-[14px]">
                 <Link to="/shop">Product</Link>
               </li>
-              <li className="relative after:absolute after:h-[1.5px] after:bg-black after:left-0 after:bottom-[-2px] after:transition-all after:duration-300 after:w-full after:scale-x-0 hover:after:-scale-x-100">
-                <Link to="/shop">Contact</Link>
+              <li className="relative after:absolute after:h-[1.5px] after:bg-black after:left-0 after:bottom-[-2px] after:transition-all after:duration-300 after:w-full after:scale-x-0 hover:after:-scale-x-100 text-[14px]">
+                <Link to="/shop">Blog</Link>
               </li>
-              <li className="relative after:absolute after:h-[1.5px] after:bg-black after:left-0 after:bottom-[-2px] after:transition-all after:duration-300 after:w-full after:scale-x-0 hover:after:-scale-x-100">
-                <a href="#none">Blog</a>
-              </li>
-              <li className="relative after:absolute after:h-[1.5px] after:bg-black after:left-0 after:bottom-[-2px] after:transition-all after:duration-300 after:w-full after:scale-x-0 hover:after:-scale-x-100">
-                <a href="#none">Hotline</a>
+              <li className="relative after:absolute after:h-[1.5px] after:bg-black after:left-0 after:bottom-[-2px] after:transition-all after:duration-300 after:w-full after:scale-x-0 hover:after:-scale-x-100 text-[14px]">
+                <Link to="/hotline">Page</Link>
               </li>
             </ul>
           </nav>
@@ -55,21 +55,21 @@ const Headers = () => {
             <a href="#none" className="lg:hidden">
               <img className="size-5" src={ico_search} alt="" />
             </a>
-            <a href="login.html">
+            <Link to="/login">
               <img className="size-5" src={ico_user} alt="" />
-            </a>
+            </Link>
             <a href="#none" className="relative">
               <span className="absolute -top-[8px] -right-[10px] size-[18px] bg-black text-white rounded-full text-xs grid place-items-center">
                 10
               </span>
               <img className="size-5" src={ico_heart} alt="" />
             </a>
-            <a href="shopping-cart.html" className="relative">
+            <Link to="/card" className="relative">
               <span className="absolute -top-[8px] -right-[10px] size-[18px] bg-black text-white rounded-full text-xs grid place-items-center">
                 3
               </span>
               <img className="size-5" src={ico_bag} alt="" />
-            </a>
+            </Link>
           </div>
         </div>
       </header>
