@@ -12,6 +12,7 @@ import Categories from "../pages/Admin/Categories";
 import Products from "../pages/Admin/Products";
 import CardPage from "../pages/Card/CardPage";
 import OrderDetailPage from "../pages/OrderDetail/OrderDetailPage";
+import OrderPage from "../pages/Order/OrderPage";
 
 export const router = createBrowserRouter([
   {
@@ -43,8 +44,12 @@ export const router = createBrowserRouter([
         element: <CardPage />,
       },
       {
-        path: "order",
+        path: "order/detail",
         element: <OrderDetailPage />,
+      },
+      {
+        path: "order",
+        element: <OrderPage />,
       },
     ],
   },

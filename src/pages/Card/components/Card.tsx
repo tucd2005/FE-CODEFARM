@@ -1,6 +1,7 @@
 import img_product_cart from "../../../assets/images/img_product_cart.avif";
 import img_product_cart2 from "../../../assets/images/img_product_cart2.avif";
 import ico_trash from "../../../assets/images/ico_trash.png";
+import { Link } from "react-router-dom";
 const Card = () => {
   return (
     <>
@@ -159,12 +160,12 @@ const Card = () => {
                   />
                   <p className="mt-6 font-semibold">Total: $450.00</p>
 
-                  <a
-                    href="order.html"
+                  <Link 
+                    to="/order"
                     className="flex items-center justify-center h-[50px] mt-6 bg-black w-full text-white font-semibold text-sm px-4 flex-1 rounded-full hover:bg hover:bg-white border hover:border-black hover:text-black transition-all"
                   >
                     Check out
-                  </a>
+                  </Link>
                 </div>
               </div>
             </div>
