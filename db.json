@@ -1,89 +1,193 @@
 {
-    "categories": [
+  "categories": [
     {
       "id": 1,
-      "name": "Điện thoại",
-      "slug": "dien-thoai",
-      "image": "https://noithattamviet.net/public/images/products/ghe-sofa-don-sd-17-1727663622.jpg"
+      "name": "Áo nam",
+      "slug": "ao-nam",
+      "image": "https://via.placeholder.com/150x150.png?text=Áo+nam",
+      "status": true
     },
     {
       "id": 2,
-      "name": "Laptop",
-      "slug": "laptop",
-      "image": "https://via.placeholder.com/100x100.png?text=Laptop"
+      "name": "Áo nữ",
+      "slug": "ao-nu",
+      "image": "https://via.placeholder.com/150x150.png?text=Áo+nữ",
+      "status": true
     },
     {
       "id": 3,
-      "name": "Phụ kiện",
-      "slug": "phu-kien",
-      "image": "https://via.placeholder.com/100x100.png?text=Phụ+kiện"
+      "name": "Quần nam",
+      "slug": "quan-nam",
+      "image": "https://via.placeholder.com/150x150.png?text=Quần+nam",
+      "status": true
     },
     {
-      "id": 3,
+      "id": 4,
       "name": "Phụ kiện",
       "slug": "phu-kien",
-      "image": "https://via.placeholder.com/100x100.png?text=Phụ+kiện"
-    },
-    {
-      "id": 3,
-      "name": "Phụ kiện",
-      "slug": "phu-kien",
-      "image": "https://via.placeholder.com/100x100.png?text=Phụ+kiện"
-    },
-    {
-      "id": 3,
-      "name": "Phụ kiện",
-      "slug": "phu-kien",
-      "image": "https://via.placeholder.com/100x100.png?text=Phụ+kiện"
-    },
-    {
-      "id": 3,
-      "name": "Phụ kiện",
-      "slug": "phu-kien",
-      "image": "https://via.placeholder.com/100x100.png?text=Phụ+kiện"
+      "image": "https://via.placeholder.com/150x150.png?text=Phụ+kiện",
+      "status": true
     }
   ],
-    "users": [
-      {
-        "id": 1,
-        "name": "Nguyễn Văn A",
-        "email": "a@gmail.com",
-        "role": "admin"
-      },
-      {
-        "id": 2,
-        "name": "Trần Thị B",
-        "email": "b@gmail.com",
-        "role": "user"
-      }
-    ],
-    "orders": [
-      {
-        "id": 101,
-        "userId": 1,
-        "total": 54000000,
-        "status": "Đã giao"
-      },
-      {
-        "id": 102,
-        "userId": 2,
-        "total": 33000000,
-        "status": "Chờ xác nhận"
-      }
-    ],
-    "posts": [
-      {
-        "id": 1,
-        "title": "Top 5 smartphone đáng mua 2025",
-        "content": "Nội dung chi tiết...",
-        "createdAt": "2025-05-01"
-      },
-      {
-        "id": 2,
-        "title": "Khuyến mãi tháng 5",
-        "content": "Giảm giá đến 50%...",
-        "createdAt": "2025-05-15"
-      }
-    ]
-  }
-  
+  "users": [
+    {
+      "id": 1,
+      "name": "Nguyễn Văn A",
+      "email": "a@gmail.com",
+      "role": "admin",
+      "active": true
+    },
+    {
+      "id": 2,
+      "name": "Trần Thị B",
+      "email": "b@gmail.com",
+      "role": "user"
+    }
+  ],
+  "orders": [
+    {
+      "id": 1,
+      "customerName": "Nguyễn Văn A",
+      "email": "a@gmail.com",
+      "status": "pending",
+      "total": 250000,
+      "date": "2025-06-01"
+    },
+    {
+      "id": 2,
+      "customerName": "Trần Thị B",
+      "email": "b@gmail.com",
+      "status": "completed",
+      "total": 500000,
+      "date": "2025-06-02"
+    }
+  ],
+  "posts": [
+    {
+      "id": 1,
+      "title": "Top xu hướng thời trang hè 2025",
+      "content": "Bài viết giới thiệu các mẫu áo quần hot nhất mùa hè...",
+      "createdAt": "2025-05-01"
+    },
+    {
+      "id": 2,
+      "title": "Khuyến mãi tháng 6",
+      "content": "Giảm giá lên tới 70% toàn bộ mặt hàng!",
+      "createdAt": "2025-06-01"
+    }
+  ],
+  "products": [
+    {
+      "id": 1,
+      "name": "Áo thun nam basic",
+      "price": 199000,
+      "description": "Chất liệu cotton thoáng mát, form regular dễ mặc.",
+      "image": "https://images.unsplash.com/photo-1602810316705-4dd0f8c1e522",
+      "category": "Áo nam"
+    },
+    {
+      "id": 2,
+      "name": "Quần jean nữ dáng suông",
+      "price": 350000,
+      "description": "Chất liệu denim cao cấp, co giãn nhẹ.",
+      "image": "https://images.unsplash.com/photo-1556909190-447b34a84f95",
+      "category": "Quần nữ"
+    },
+    {
+      "id": 3,
+      "name": "Áo sơ mi nam caro",
+      "price": 289000,
+      "description": "Thiết kế cổ điển, phù hợp công sở lẫn dạo phố.",
+      "image": "https://images.unsplash.com/photo-1530845646841-d8f7765255ac",
+      "category": "Áo nam"
+    },
+    {
+      "id": 4,
+      "name": "Váy liền thân nữ",
+      "price": 420000,
+      "description": "Kiểu dáng nữ tính, phù hợp đi chơi, dự tiệc.",
+      "image": "https://images.unsplash.com/photo-1593032465171-8f85d0d2e1c9",
+      "category": "Áo nữ"
+    },
+    {
+      "id": 5,
+      "name": "Thắt lưng da thật",
+      "price": 150000,
+      "description": "Chất liệu da bò bền đẹp, thiết kế đơn giản.",
+      "image": "https://images.unsplash.com/photo-1618354691373-cf4f7c4c2671",
+      "category": "Phụ kiện"
+    },
+    {
+      "id": 6,
+      "name": "Quần short nam thể thao",
+      "price": 175000,
+      "description": "Chất vải co giãn, thấm hút tốt, phù hợp vận động.",
+      "image": "https://images.unsplash.com/photo-1602810317487-912f982ec4d0",
+      "category": "Quần nam"
+    },
+    {
+      "id": 7,
+      "name": "Áo croptop nữ tay ngắn",
+      "price": 210000,
+      "description": "Thiết kế trẻ trung, chất vải thun lạnh mềm mịn.",
+      "image": "https://images.unsplash.com/photo-1618354691229-9a5028a8b80e",
+      "category": "Áo nữ"
+    },
+    {
+      "id": 8,
+      "name": "Túi xách đeo chéo mini",
+      "price": 320000,
+      "description": "Phụ kiện thời trang nhỏ gọn, tiện lợi.",
+      "image": "https://images.unsplash.com/photo-1602810317666-efba5b5ae36e",
+      "category": "Phụ kiện"
+    },
+    {
+      "id": 9,
+      "name": "Áo hoodie nam",
+      "price": 399000,
+      "description": "Form rộng, chất nỉ dày dặn, giữ ấm tốt.",
+      "image": "https://images.unsplash.com/photo-1600180758890-3c4d61b3b6d4",
+      "category": "Áo nam"
+    },
+    {
+      "id": 10,
+      "name": "Kính râm thời trang",
+      "price": 190000,
+      "description": "Bảo vệ mắt khỏi tia UV, phong cách hiện đại.",
+      "image": "https://images.unsplash.com/photo-1543163521-1bf539c7c2b4",
+      "category": "Phụ kiện"
+    }
+  ],
+  "variants": [
+    {
+      "id": 1,
+      "productId": 1,
+      "sku": "SKU001-XL-Do",
+      "price": 160000,
+      "size": "XL",
+      "color": "Đỏ",
+      "stock": 10,
+      "status": true
+    },
+    {
+      "id": 2,
+      "productId": 1,
+      "sku": "SKU002-L-Xanh",
+      "price": 160000,
+      "size": "L",
+      "color": "Xanh",
+      "stock": 5,
+      "status": true
+    },
+    {
+      "id": 3,
+      "productId": 2,
+      "sku": "SKU003-M-Trang",
+      "price": 260000,
+      "size": "M",
+      "color": "Trắng",
+      "stock": 8,
+      "status": true
+    }
+  ]
+}

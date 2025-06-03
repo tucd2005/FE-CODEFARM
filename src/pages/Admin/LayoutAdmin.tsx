@@ -4,7 +4,7 @@ import { Content, Footer, Header } from 'antd/es/layout/layout';
 import Sider from 'antd/es/layout/Sider';
 import { Link, Outlet, useLocation } from 'react-router-dom';
 
-import logoCF from '../../assets/images/logoCF.jpg'
+import logoCF from '../../assets/images/logoCF.jpg';
 import {
   DashboardOutlined,
   AppstoreOutlined,
@@ -13,7 +13,9 @@ import {
   OrderedListOutlined,
   FileTextOutlined,
   SafetyOutlined,
+  BarcodeOutlined,
 } from '@ant-design/icons';
+import Quanlibienthe from './Quanlibienthe';
 
 const menuItems = [
   {
@@ -58,6 +60,12 @@ const menuItems = [
     label: 'Quản lý quyền & vai trò',
     path: '/admin/roles',
   },
+  {
+    key: 'variants',
+    icon: <BarcodeOutlined />, // icon nhỏ gọn thay cho component
+    label: 'Quản lý biến thể',
+    path: '/admin/variants',
+  },
 ];
 
 const LayoutAdmin = () => {
@@ -69,10 +77,11 @@ const LayoutAdmin = () => {
   const selectedKey = menuItems.find(item => location.pathname.startsWith(item.path))?.key;
 
   return (
-    <Layout style={{ minHeight: '100vh', overflow: 'hidden' }}>
-     
+    <Layout style={{ minHeight: '100dvh' }}>
       <Sider breakpoint="lg" collapsedWidth="0">
-        <img src={logoCF} alt="" />
+        <a href="/admin">
+          <img src={logoCF} alt="Logo" />
+        </a>
         <div className="demo-logo-vertical" />
         <Menu
           theme="dark"
@@ -91,10 +100,12 @@ const LayoutAdmin = () => {
         <Content
           style={{
             margin: '24px 16px 0',
-            flex: 1,
             display: 'flex',
+            height: "calc( 100dvh - 120px )",
             flexDirection: 'column',
-            overflow: 'hidden',
+            overflow: 'scroll',
+            backgroundColor: 'white',
+            borderRadius: "8px"
           }}
         >
           <div
@@ -106,19 +117,13 @@ const LayoutAdmin = () => {
               minHeight: 0,
             }}
           >
+            {/* Kiểm tra nếu đường dẫn là /admin thì hiển thị dòng chữ */}
+            {location.pathname === '/admin' && (
+              <div className="text-[80px] text-blue-600">Chào mừng bạn đến với admin</div>
+            )}
             <Outlet />
           </div>
         </Content>
-        <Footer
-          style={{
-            textAlign: 'center',
-            padding: '8px 0',
-            height: 40,
-            lineHeight: '40px',
-          }}
-        >
-          Ant Design ©{new Date().getFullYear()} Created by Ant UED
-        </Footer>
       </Layout>
     </Layout>
   );
