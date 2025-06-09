@@ -1,4 +1,4 @@
-import img_product_list_banner from "../../../assets/images/img_product_list_banner.webp";
+
 const BannerShop = () => {
   return (
     <>

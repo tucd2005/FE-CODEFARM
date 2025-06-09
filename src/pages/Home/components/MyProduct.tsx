@@ -1,7 +1,4 @@
-import img_product from "../../../assets/images/img_product.webp";
-import img_product2 from "../../../assets/images/img_product2.webp";
-import img_product3 from "../../../assets/images/img_product3.webp";
-import img_product4 from "../../../assets/images/img_product4.webp";
+
 import ico_star_active from "../../../assets/images/ico_star_active.png";
 import ico_star_gray from "../../../assets/images/ico_star_gray.png";
 import ico_heart from "../../../assets/images/ico_heart.png";
