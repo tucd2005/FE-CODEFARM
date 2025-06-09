@@ -21,8 +21,9 @@ const Blog = () => {
               </a>
             </div>
 
-            <div className="rounded-2xl overflow-hidden mt-6 lg:mt-0">
-              <img className="image" src={img_experience} alt="" />
+            <div className="rounded-2xl overflow-hidden mt-6 lg:mt-7 flex ">
+              <img className="" src="public/images/ok.jpg" alt=""  width={400} height={400}/>
+              <img className="" src="public/images/okblog.jpg" alt=""  width={500} height={500}/>
             </div>
           </div>
         </div>

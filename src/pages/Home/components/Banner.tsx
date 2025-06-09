@@ -2,7 +2,7 @@ import img_banner from "../../../assets/images/img_banner.webp";
 const Banner = () => {
   return (
     <section className="relative overflow-hidden">
-      <img className="animate-zoomIn" src={img_banner} alt="" />
+      <img className="animate-zoomIn" src="public/images/banner.png" alt="" />
       <div className="absolute w-full top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-center">
         <h2 className="text-xl lg:text-4xl font-bold text-white lg:leading-10 animate-slideInLeft">
           Harmony in Design: <br />

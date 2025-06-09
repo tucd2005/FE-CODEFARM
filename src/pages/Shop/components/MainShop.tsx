@@ -75,7 +75,7 @@ const MainShop = () => {
                     <div className="rounded-xl overflow-hidden bg-white lg:h-[385px]">
                       <img
                         className="block size-full object-cover"
-                        src={img_product}
+                         src="public/images/sneaker1.jpg"
                         alt=""
                       />
                     </div>
@@ -166,7 +166,7 @@ const MainShop = () => {
                     <div className="rounded-xl overflow-hidden bg-white lg:h-[385px]">
                       <img
                         className="block size-full object-cover"
-                        src={img_product2}
+                    src="public/images/sneaker2.jpg"
                         alt=""
                       />
                     </div>
@@ -219,7 +219,7 @@ const MainShop = () => {
                     <div className="rounded-xl overflow-hidden bg-white lg:h-[385px]">
                       <img
                         className="block size-full object-cover"
-                        src={img_product}
+                        src="public/images/sneaker9.jpg"
                         alt=""
                       />
                     </div>
@@ -352,7 +352,7 @@ const MainShop = () => {
                     <div className="rounded-xl overflow-hidden bg-white lg:h-[385px]">
                       <img
                         className="block size-full object-cover"
-                        src={img_product4}
+                  src="public/images/sneaker3.jpg"
                         alt=""
                       />
                     </div>
@@ -450,7 +450,7 @@ const MainShop = () => {
                     <div className="rounded-xl overflow-hidden bg-white lg:h-[385px]">
                       <img
                         className="block size-full object-cover"
-                        src={img_product}
+            src="public/images/sneaker4.jpg"
                         alt=""
                       />
                     </div>
@@ -541,7 +541,7 @@ const MainShop = () => {
                     <div className="rounded-xl overflow-hidden bg-white lg:h-[385px]">
                       <img
                         className="block size-full object-cover"
-                        src={img_product2}
+                     src="public/images/sneaker5.jpg"
                         alt=""
                       />
                     </div>
@@ -594,7 +594,7 @@ const MainShop = () => {
                     <div className="rounded-xl overflow-hidden bg-white lg:h-[385px]">
                       <img
                         className="block size-full object-cover"
-                        src={img_product3}
+                   src="public/images/sneaker6.jpg"
                         alt=""
                       />
                     </div>
@@ -727,7 +727,7 @@ const MainShop = () => {
                     <div className="rounded-xl overflow-hidden bg-white lg:h-[385px]">
                       <img
                         className="block size-full object-cover"
-                        src={img_product4}
+                      src="public/images/sneaker7.jpg"
                         alt=""
                       />
                     </div>
@@ -824,7 +824,7 @@ const MainShop = () => {
                     <div className="rounded-xl overflow-hidden bg-white lg:h-[385px]">
                       <img
                         className="block size-full object-cover"
-                        src={img_product}
+                    src="public/images/sneaker8.jpg"
                         alt=""
                       />
                     </div>
