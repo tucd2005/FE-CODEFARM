@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from 'react';
-import axios from 'axios';
 import { Table, Space } from 'antd';
 import type { ColumnsType } from 'antd/es/table';
 
@@ -19,8 +18,9 @@ const Products: React.FC = () => {
   useEffect(() => {
     const fetchProducts = async () => {
       try {
-        const res = await axios.get<Product[]>('http://localhost:3000/products');
-        setProducts(res.data);
+        const res = await fetch('http://localhost:3000/products');
+        const data = await res.json();
+        setProducts(data);
       } catch (err) {
         console.error('Lỗi fetch products:', err);
       } finally {

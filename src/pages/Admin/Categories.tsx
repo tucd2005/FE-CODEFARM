@@ -1,12 +1,16 @@
 import React, { useEffect, useState } from 'react';
-import { Table, Space } from 'antd';
-import type { ColumnsType } from 'antd/es/table';
+import { Table, Space, message, Popconfirm, Button } from 'antd';
+import { Link } from 'react-router-dom';
+import axios from 'axios';
 
 interface Category {
   id: number;
   name: string;
   slug: string;
+  image?: string;
+  status?: boolean;  // thêm trường status
 }
+
 const Categories: React.FC = () => {
   const [categories, setCategories] = useState<Category[]>([]);
   const [loading, setLoading] = useState<boolean>(true);
@@ -14,11 +18,13 @@ const Categories: React.FC = () => {
   useEffect(() => {
     const fetchCategories = async () => {
       try {
-        const res = await fetch('http://localhost:3000/categories');
-        const data = await res.json();
-        setCategories(data);
+        const res = await axios.get('http://localhost:3000/categories');
+        // Lọc ra những danh mục có status khác false (mặc định true hoặc undefined)
+        const activeCategories = res.data.filter((cat: Category) => cat.status !== false);
+        setCategories(activeCategories);
       } catch (err) {
         console.error('Lỗi fetch categories:', err);
+        message.error('Không thể lấy danh sách danh mục');
       } finally {
         setLoading(false);
       }
@@ -27,9 +33,23 @@ const Categories: React.FC = () => {
     fetchCategories();
   }, []);
 
+  // Xóa mềm: cập nhật status = false
+  const handleDelete = async (id: number) => {
+    try {
+      await axios.patch(`http://localhost:3000/categories/${id}`, { status: false });
+      message.success('Đã ẩn danh mục thành công!');
+      setCategories(prev => prev.filter(item => item.id !== id));
+    } catch (error) {
+      message.error("Ẩn danh mục thất bại!");
+    }
+  };
+
   return (
-    <div style={{ padding: 24 }}>
-      <h2>Danh mục sản phẩm</h2>
+    <>
+      <div className='flex justify-between items-center mb-4'>
+        <h2>Danh mục sản phẩm</h2>
+        <Button type='primary'><Link to={"add"}>Thêm danh mục</Link></Button>
+      </div>
       <Table
         loading={loading}
         dataSource={categories}
@@ -53,7 +73,6 @@ const Categories: React.FC = () => {
               <img src={img} alt="category" style={{ width: 60, height: 60, objectFit: 'cover' }} />
             ),
           },
-          
           {
             title: 'Slug',
             dataIndex: 'slug',
@@ -64,14 +83,22 @@ const Categories: React.FC = () => {
             key: 'action',
             render: (_, record) => (
               <Space size="middle">
-                <a>Sửa</a>
-                <a>Xoá</a>
+                <Link to={`edit/${record.id}`}>Sửa</Link>
+                <Popconfirm
+                  title="Ẩn danh mục"
+                  description="Bạn có chắc chắn muốn ẩn danh mục này không?"
+                  onConfirm={() => handleDelete(record.id)}
+                  okText="Ẩn"
+                  cancelText="Huỷ"
+                >
+                  <Button danger>Ẩn</Button>
+                </Popconfirm>
               </Space>
             ),
           },
         ]}
       />
-    </div>
+    </>
   );
 };
 
