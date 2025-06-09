@@ -1,6 +1,4 @@
-import img_collection from "../../../assets/images/img_collection.jpg";
-import img_collection2 from "../../../assets/images/img_collection2.webp";
-import img_collection3 from "../../../assets/images/img_collection3.webp";
+
 const MyCategory = () => {
   return (
     <div>
@@ -19,7 +17,7 @@ const MyCategory = () => {
           <ul className="mt-10 md:grid grid-cols-3 gap-10 cursor-pointer">
             <li>
               <div className="rounded-[20px] overflow-hidden relative group">
-                <img className="image" src={img_collection} alt="" />
+                <img className="image" src="public/images/newban21.jpg" alt="" />
                 <a
                   href="#none"
                   className="absolute group-hover:bottom-10 left-1/2 -translate-x-1/2 -bottom-10 mt-8 h-9 bg-white px-7 inline-flex items-center font-semibold text-black rounded-full text-[15px] hover:bg-black hover:text-white transition-all duration-300"
@@ -30,7 +28,7 @@ const MyCategory = () => {
             </li>
             <li className="mt-6 md:mt-0">
               <div className="rounded-[20px] overflow-hidden relative group">
-                <img className="image" src={img_collection2} alt="" />
+                <img className="image" src="public/images/newban18.jpg" alt="" />
                 <a
                   href="#none"
                   className="absolute group-hover:bottom-10 left-1/2 -translate-x-1/2 -bottom-10 mt-8 h-9 bg-white px-7 inline-flex items-center font-semibold text-black rounded-full text-[15px] hover:bg-black hover:text-white transition-all duration-300"
@@ -41,7 +39,7 @@ const MyCategory = () => {
             </li>
             <li className="mt-6 md:mt-0">
               <div className="rounded-[20px] overflow-hidden relative group">
-                <img className="image" src={img_collection3} alt="" />
+                <img className="image" src="public/images/newban16.jpg" alt="" />
                 <a
                   href="#none"
                   className="absolute group-hover:bottom-10 left-1/2 -translate-x-1/2 -bottom-10 mt-8 h-9 bg-white px-7 inline-flex items-center font-semibold text-black rounded-full text-[15px] hover:bg-black hover:text-white transition-all duration-300"

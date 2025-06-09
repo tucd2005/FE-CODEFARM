@@ -1,7 +1,4 @@
-import img_product_thumb from "../../../assets/images/img_product_thumb.avif";
-import img_product_thumb2 from "../../../assets/images/img_product_thumb2.webp";
-import img_product_thumb4 from "../../../assets/images/img_product_thumb4.webp";
-import img_product_detail from "../../../assets/images/img_product_detail.webp";
+
 import ico_star_active from "../../../assets/images/ico_star_active.png";
 import ico_eye from "../../../assets/images/ico_eye.png";
 import ico_fire from "../../../assets/images/ico_fire.png";
@@ -38,18 +35,18 @@ const DetailProduct = () => {
           <div className="col-span-3 flex gap-3">
             <ul className="flex flex-col gap-4">
               <li className="w-[82px] cursor-pointer p-[10px] rounded-md border border-black hover:border-black transition-all">
-                <img className="image" src={img_product_thumb} alt="" />
+                <img className="image" src="public/images/detail6/2.jpg" alt="" />
               </li>
               <li className="w-[82px] cursor-pointer p-[10px] rounded-md border border-transparent hover:border-black transition-all">
-                <img className="image" src={img_product_thumb2} alt="" />
+                <img className="image" src="public/images/detail6/3.jpg" alt="" />
               </li>
               <li className="w-[82px] cursor-pointer p-[10px] rounded-md border border-transparent hover:border-black transition-all">
-                <img className="image" src={img_product_thumb4} alt="" />
+                <img className="image" src="public/images/detail6/4.jpg" alt="" />
               </li>
             </ul>
             <div className="overflow-hidden">
               <div className="rounded-xl overflow-hidden">
-                <img src={img_product_detail} className="image" alt="" />
+                <img src="public/images/detail6/1.jpg"className="image" alt="" />
               </div>
             </div>
           </div>

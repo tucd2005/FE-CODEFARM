@@ -133,7 +133,7 @@ const OrderPage = () => {
                     <ul className="space-y-3">
                       <li className="flex items-center gap-3">
                         <div className="size-16 border border-gray rounded-md overflow-hidden">
-                          <img className="image" src={img_order} alt="" />
+                          <img className="image" src="public/images/sneaker1.jpg" alt="" />
                         </div>
                         <p>Suspension Archives</p>
                         <span className="ml-auto">$59.00 </span>
@@ -141,7 +141,7 @@ const OrderPage = () => {
 
                       <li className="flex items-center gap-3">
                         <div className="size-16 border border-gray rounded-md overflow-hidden">
-                          <img className="image" src={img_order} alt="" />
+                          <img className="image" src="public/images/sneaker2.jpg" alt="" />
                         </div>
                         <p>Suspension Archives</p>
                         <span className="ml-auto">$59.00 </span>
