@@ -1,8 +1,4 @@
 
-import img_order from "../../../assets/images/img_order.webp";
-import img_product from "../../../assets/images/img_product.webp";
-import img_product2 from "../../../assets/images/img_product2.webp";
-
 const OrderDetail = () => {
   return (
     <>
@@ -63,7 +59,7 @@ const OrderDetail = () => {
                         <ul className="space-y-3">
                           <li className="flex items-center gap-3">
                             <div className="size-16 border border-gray rounded-md overflow-hidden">
-                              <img className="image" src={img_order} alt="" />
+                              <img className="image" src="public/images/sneaker1.jpg" alt="" />
                             </div>
                             <p className="flex flex-col">
                               <span className="font-semibold">Dashboard</span>
@@ -74,7 +70,7 @@ const OrderDetail = () => {
 
                           <li className="flex items-center gap-3">
                             <div className="size-16 border border-gray rounded-md overflow-hidden">
-                              <img className="image" src={img_product} alt="" />
+                              <img className="image" src="public/images/sneaker2.jpg" alt="" />
                             </div>
                             <p className="flex flex-col">
                               <span className="font-semibold">Product aaaa</span>
@@ -85,7 +81,7 @@ const OrderDetail = () => {
 
                           <li className="flex items-center gap-3">
                             <div className="size-16 border border-gray rounded-md overflow-hidden">
-                              <img className="image" src={img_product2} alt="" />
+                              <img className="image" src="public/images/sneaker3.jpg" alt="" />
                             </div>
                             <p className="flex flex-col">
                               <span className="font-semibold">Suspension </span>

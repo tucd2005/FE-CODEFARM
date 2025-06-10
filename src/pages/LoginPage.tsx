@@ -1,5 +1,3 @@
-import Headers from "../components/common/Headers";
-import Footers from "../components/common/Footers";
 
 const LoginPage = () => {
   return (

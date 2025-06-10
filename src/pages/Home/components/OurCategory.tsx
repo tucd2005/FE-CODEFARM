@@ -14,7 +14,7 @@ const OurCategory = () => {
             <li className="mt-6 md:mt-0">
               <a href="#none">
                 <div className="rounded-lg overflow-hidden">
-                  <img className="image" src={img_category} alt="" />
+                  <img className="image" src="public/images/newban1.jpg" alt="" />
                 </div>
                 <h3 className="mt-4 font-semibold">Bathroom</h3>
               </a>
@@ -22,7 +22,7 @@ const OurCategory = () => {
             <li className="mt-6 md:mt-0">
               <a href="#none">
                 <div className="rounded-lg overflow-hidden">
-                  <img className="image" src={img_category2} alt="" />
+                  <img className="image" src="public/images/newban2.jpg" alt="" />
                 </div>
                 <h3 className="mt-4 font-semibold">Chair</h3>
               </a>
@@ -30,7 +30,7 @@ const OurCategory = () => {
             <li className="mt-6 md:mt-0">
               <a href="#none">
                 <div className="rounded-lg overflow-hidden">
-                  <img className="image" src={img_category3} alt="" />
+                  <img className="image" src="public/images/newban3.jpg" alt="" />
                 </div>
                 <h3 className="mt-4 font-semibold">Decor</h3>
               </a>
@@ -38,7 +38,7 @@ const OurCategory = () => {
             <li className="mt-6 md:mt-0">
               <a href="#none">
                 <div className="rounded-lg overflow-hidden">
-                  <img className="image" src={img_category4} alt="" />
+                  <img className="image" src="public/images/newban4.jpg" alt="" />
                 </div>
                 <h3 className="mt-4 font-semibold">Lamp</h3>
               </a>

@@ -1,5 +1,4 @@
-import img_product_cart from "../../../assets/images/img_product_cart.avif";
-import img_product_cart2 from "../../../assets/images/img_product_cart2.avif";
+
 import ico_trash from "../../../assets/images/ico_trash.png";
 import { Link } from "react-router-dom";
 const Card = () => {
@@ -32,7 +31,7 @@ const Card = () => {
                         <div className="w-32 overflow-hidden">
                           <img
                             className="image"
-                            src={img_product_cart}
+                            src="public/images/sneaker1.jpg"
                             alt=""
                           />
                         </div>
@@ -81,7 +80,7 @@ const Card = () => {
                         <div className="w-32 overflow-hidden">
                           <img
                             className="image"
-                            src={img_product_cart2}
+                        src="public/images/sneaker2.jpg"
                             alt=""
                           />
                         </div>
