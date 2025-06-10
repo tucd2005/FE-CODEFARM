@@ -4,7 +4,7 @@ import { Content, Footer, Header } from 'antd/es/layout/layout';
 import Sider from 'antd/es/layout/Sider';
 import { Link, Outlet, useLocation } from 'react-router-dom';
 
-import logoCF from '../../assets/images/logoCF.jpg';
+// import logoCF from '../../assets/images/logoCF.jpg';
 import {
   DashboardOutlined,
   AppstoreOutlined,
@@ -15,7 +15,7 @@ import {
   SafetyOutlined,
   BarcodeOutlined,
 } from '@ant-design/icons';
-import Quanlibienthe from './Quanlibienthe';
+import Quanlibienthe from '../pages/Admin/bienthe/Quanlibienthe';
 
 const menuItems = [
   {
@@ -80,7 +80,7 @@ const LayoutAdmin = () => {
     <Layout style={{ minHeight: '100dvh' }}>
       <Sider breakpoint="lg" collapsedWidth="0">
         <a href="/admin">
-          <img src={logoCF} alt="Logo" />
+          <img src="" alt="Logo" />
         </a>
         <div className="demo-logo-vertical" />
         <Menu

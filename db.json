@@ -1,34 +1,35 @@
 {
   "categories": [
-    {
-      "id": 1,
-      "name": "Áo nam",
-      "slug": "ao-nam",
-      "image": "https://via.placeholder.com/150x150.png?text=Áo+nam",
-      "status": true
-    },
-    {
-      "id": 2,
-      "name": "Áo nữ",
-      "slug": "ao-nu",
-      "image": "https://via.placeholder.com/150x150.png?text=Áo+nữ",
-      "status": true
-    },
-    {
-      "id": 3,
-      "name": "Quần nam",
-      "slug": "quan-nam",
-      "image": "https://via.placeholder.com/150x150.png?text=Quần+nam",
-      "status": true
-    },
-    {
-      "id": 4,
-      "name": "Phụ kiện",
-      "slug": "phu-kien",
-      "image": "https://via.placeholder.com/150x150.png?text=Phụ+kiện",
-      "status": true
-    }
-  ],
+  {
+    "id": 1,
+    "name": "Giày nam",
+    "slug": "giay-nam",
+    "image": "https://via.placeholder.com/150x150.png?text=Giày+nam",
+    "status": true
+  },
+  {
+    "id": 2,
+    "name": "Giày nữ",
+    "slug": "giay-nu",
+    "image": "https://via.placeholder.com/150x150.png?text=Giày+nữ",
+    "status": true
+  },
+  {
+    "id": 3,
+    "name": "Giày thể thao",
+    "slug": "giay-the-thao",
+    "image": "https://via.placeholder.com/150x150.png?text=Giày+thể+thao",
+    "status": true
+  },
+  {
+    "id": 4,
+    "name": "Phụ kiện giày",
+    "slug": "phu-kien-giay",
+    "image": "https://via.placeholder.com/150x150.png?text=Phụ+kiện+giày",
+    "status": true
+  }
+],
+
   "users": [
     {
       "id": 1,
@@ -77,87 +78,88 @@
     }
   ],
   "products": [
-    {
-      "id": 1,
-      "name": "Áo thun nam basic",
-      "price": 199000,
-      "description": "Chất liệu cotton thoáng mát, form regular dễ mặc.",
-      "image": "https://images.unsplash.com/photo-1602810316705-4dd0f8c1e522",
-      "category": "Áo nam"
-    },
-    {
-      "id": 2,
-      "name": "Quần jean nữ dáng suông",
-      "price": 350000,
-      "description": "Chất liệu denim cao cấp, co giãn nhẹ.",
-      "image": "https://images.unsplash.com/photo-1556909190-447b34a84f95",
-      "category": "Quần nữ"
-    },
-    {
-      "id": 3,
-      "name": "Áo sơ mi nam caro",
-      "price": 289000,
-      "description": "Thiết kế cổ điển, phù hợp công sở lẫn dạo phố.",
-      "image": "https://images.unsplash.com/photo-1530845646841-d8f7765255ac",
-      "category": "Áo nam"
-    },
-    {
-      "id": 4,
-      "name": "Váy liền thân nữ",
-      "price": 420000,
-      "description": "Kiểu dáng nữ tính, phù hợp đi chơi, dự tiệc.",
-      "image": "https://images.unsplash.com/photo-1593032465171-8f85d0d2e1c9",
-      "category": "Áo nữ"
-    },
-    {
-      "id": 5,
-      "name": "Thắt lưng da thật",
-      "price": 150000,
-      "description": "Chất liệu da bò bền đẹp, thiết kế đơn giản.",
-      "image": "https://images.unsplash.com/photo-1618354691373-cf4f7c4c2671",
-      "category": "Phụ kiện"
-    },
-    {
-      "id": 6,
-      "name": "Quần short nam thể thao",
-      "price": 175000,
-      "description": "Chất vải co giãn, thấm hút tốt, phù hợp vận động.",
-      "image": "https://images.unsplash.com/photo-1602810317487-912f982ec4d0",
-      "category": "Quần nam"
-    },
-    {
-      "id": 7,
-      "name": "Áo croptop nữ tay ngắn",
-      "price": 210000,
-      "description": "Thiết kế trẻ trung, chất vải thun lạnh mềm mịn.",
-      "image": "https://images.unsplash.com/photo-1618354691229-9a5028a8b80e",
-      "category": "Áo nữ"
-    },
-    {
-      "id": 8,
-      "name": "Túi xách đeo chéo mini",
-      "price": 320000,
-      "description": "Phụ kiện thời trang nhỏ gọn, tiện lợi.",
-      "image": "https://images.unsplash.com/photo-1602810317666-efba5b5ae36e",
-      "category": "Phụ kiện"
-    },
-    {
-      "id": 9,
-      "name": "Áo hoodie nam",
-      "price": 399000,
-      "description": "Form rộng, chất nỉ dày dặn, giữ ấm tốt.",
-      "image": "https://images.unsplash.com/photo-1600180758890-3c4d61b3b6d4",
-      "category": "Áo nam"
-    },
-    {
-      "id": 10,
-      "name": "Kính râm thời trang",
-      "price": 190000,
-      "description": "Bảo vệ mắt khỏi tia UV, phong cách hiện đại.",
-      "image": "https://images.unsplash.com/photo-1543163521-1bf539c7c2b4",
-      "category": "Phụ kiện"
-    }
-  ],
+  {
+    "id": 1,
+    "name": "Giày sneaker nam trắng basic",
+    "price": 790000,
+    "description": "Thiết kế tối giản, dễ phối đồ, chất liệu da PU cao cấp.",
+    "image": "https://images.unsplash.com/photo-1600180758890-3c4d61b3b6d4",
+    "category": "Giày nam"
+  },
+  {
+    "id": 2,
+    "name": "Giày búp bê nữ mũi nhọn",
+    "price": 650000,
+    "description": "Phong cách thanh lịch, phù hợp đi làm hoặc dạo phố.",
+    "image": "https://images.unsplash.com/photo-1556909190-447b34a84f95",
+    "category": "Giày nữ"
+  },
+  {
+    "id": 3,
+    "name": "Giày thể thao chạy bộ nam",
+    "price": 890000,
+    "description": "Đệm EVA êm ái, thoáng khí, hỗ trợ chuyển động linh hoạt.",
+    "image": "https://images.unsplash.com/photo-1602810317487-912f982ec4d0",
+    "category": "Giày thể thao"
+  },
+  {
+    "id": 4,
+    "name": "Giày sneaker nữ màu pastel",
+    "price": 720000,
+    "description": "Thiết kế trẻ trung, phối màu pastel nhẹ nhàng.",
+    "image": "https://images.unsplash.com/photo-1593032465171-8f85d0d2e1c9",
+    "category": "Giày nữ"
+  },
+  {
+    "id": 5,
+    "name": "Dây giày phản quang",
+    "price": 50000,
+    "description": "Phụ kiện giúp giày nổi bật trong bóng tối.",
+    "image": "https://images.unsplash.com/photo-1618354691373-cf4f7c4c2671",
+    "category": "Phụ kiện giày"
+  },
+  {
+    "id": 6,
+    "name": "Lót giày êm ái",
+    "price": 70000,
+    "description": "Giảm áp lực bàn chân, phù hợp mọi loại giày.",
+    "image": "https://images.unsplash.com/photo-1602810317666-efba5b5ae36e",
+    "category": "Phụ kiện giày"
+  },
+  {
+    "id": 7,
+    "name": "Giày slip-on nữ vải canvas",
+    "price": 590000,
+    "description": "Dễ mang, nhẹ nhàng, phù hợp cho mọi hoạt động thường ngày.",
+    "image": "https://images.unsplash.com/photo-1618354691229-9a5028a8b80e",
+    "category": "Giày nữ"
+  },
+  {
+    "id": 8,
+    "name": "Giày lười nam da trơn",
+    "price": 950000,
+    "description": "Phong cách cổ điển, chất liệu da thật, tiện lợi mang đi làm.",
+    "image": "https://images.unsplash.com/photo-1530845646841-d8f7765255ac",
+    "category": "Giày nam"
+  },
+  {
+    "id": 9,
+    "name": "Giày bóng đá sân cỏ nhân tạo",
+    "price": 990000,
+    "description": "Đinh TF chắc chắn, độ bám tốt, phù hợp sân cỏ nhân tạo.",
+    "image": "https://images.unsplash.com/photo-1602810316705-4dd0f8c1e522",
+    "category": "Giày thể thao"
+  },
+  {
+    "id": 10,
+    "name": "Bộ vệ sinh giày chuyên dụng",
+    "price": 120000,
+    "description": "Gồm bàn chải mềm, dung dịch làm sạch và khăn chuyên dụng.",
+    "image": "https://images.unsplash.com/photo-1543163521-1bf539c7c2b4",
+    "category": "Phụ kiện giày"
+  }
+]
+,
   "variants": [
     {
       "id": 1,

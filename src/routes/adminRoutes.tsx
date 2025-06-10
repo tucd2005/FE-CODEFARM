@@ -1,14 +1,14 @@
 // routers/adminRouter.tsx
-import LayoutAdmin from "../pages/Admin/LayoutAdmin";
+import LayoutAdmin from "../layouts/LayoutAdmin";
 import Dashboard from "../pages/Admin/Dashboard";
-import Categories from "../pages/Admin/Categories";
-import Products from "../pages/Admin/Products";
+import Categories from "../pages/Admin/categories/Categories";
+import Products from "../pages/Admin/products/Products";
 import Quanlinguoidung from "../pages/Admin/Quanlinguoidung";
-import Quanlidonhang from "../pages/Admin/Quanlidonhang";
+import Quanlidonhang from "../pages/Admin/donhang/Quanlidonhang";
 import Quanlibaiviet from "../pages/Admin/Quanlibaiviet";
 import Quanliquyen from "../pages/Admin/Quanliquyen";
-import CategoriesAdd from "../pages/Admin/CategoriesAdd";
-import Quanlibienthe from "../pages/Admin/Quanlibienthe";
+import CategoriesAdd from "../pages/Admin/categories/CategoriesAdd";
+import Quanlibienthe from "../pages/Admin/bienthe/Quanlibienthe";
 
 export const adminRouter = {
   path: "/admin",
