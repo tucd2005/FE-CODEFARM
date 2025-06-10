@@ -1,33 +1,27 @@
 import React from 'react';
 import { Form, Input, Button, message } from 'antd';
 import { useNavigate } from 'react-router-dom';
+import axios from 'axios';
 
 const CategoriesAdd: React.FC = () => {
   const [form] = Form.useForm();
-  const nav = useNavigate()
+  const nav = useNavigate();
 
   const onFinish = async (values: any) => {
     try {
-      const res = await fetch('http://localhost:3000/categories', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify(values),
-      });
-
-      if (res.ok) {
+      const res = await axios.post('http://localhost:3000/categories', values);
+      if (res.status === 201 || res.status === 200) {
         message.success('Thêm danh mục thành công!');
         form.resetFields();
-        nav("/admin/categories")
+        nav('/admin/categories');
       } else {
         message.error('Thêm danh mục thất bại!');
       }
     } catch (error) {
-      message.error('Có lỗi xảy ra!');
+      message.error('Có lỗi xảy ra khi gửi dữ liệu!');
+      console.error(error);
     }
   };
-
-
-
 
   return (
     <div style={{ maxWidth: 500, margin: '0 auto' }}>
@@ -68,4 +62,3 @@ const CategoriesAdd: React.FC = () => {
 };
 
 export default CategoriesAdd;
- 

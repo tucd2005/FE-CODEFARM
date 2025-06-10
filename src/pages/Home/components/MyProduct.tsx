@@ -1,7 +1,4 @@
-import img_product from "../../../assets/images/img_product.webp";
-import img_product2 from "../../../assets/images/img_product2.webp";
-import img_product3 from "../../../assets/images/img_product3.webp";
-import img_product4 from "../../../assets/images/img_product4.webp";
+
 import ico_star_active from "../../../assets/images/ico_star_active.png";
 import ico_star_gray from "../../../assets/images/ico_star_gray.png";
 import ico_heart from "../../../assets/images/ico_heart.png";
@@ -21,12 +18,12 @@ const MyProduct = () => {
                 Trải nghiệm những sản phẩm tốt nhất tại cửa hàng của chúng tôi!
               </p>
             </div>
-            <a
-              href="#none"
+            <Link
+              to="/products"
               className="mt-6 lg:mt-0 h-9 border border-black px-7 inline-flex items-center font-semibold text-black rounded-full text-[15px] hover:bg-black hover:text-white transition-all duration-300"
             >
               View All
-            </a>
+            </Link>
           </div>
 
           <ul className="mt-8 lg:grid grid-cols-4 gap-7">
@@ -205,12 +202,12 @@ const MyProduct = () => {
                     <div className="flex items-center justify-center font-bold text-15 text-center">
                       <span className="">$55.00</span>
                     </div>
-                    <a
-                      href="#none"
+                    <Link
+                      to="/detail"
                       className="uppercase text-xs font-medium tracking-widest relative before:absolute before:bottom-0 before:w-0 before:h-[1px] before:bg-black before:left-0 hover:before:w-full before:transition-all before:duration-500"
                     >
                       Add to cart
-                    </a>
+                    </Link>
                   </div>
                 </div>
               </a>
