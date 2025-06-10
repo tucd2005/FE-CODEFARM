@@ -1,7 +1,4 @@
-import img_category from "../../../assets/images/img_category.webp";
-import img_category2 from "../../../assets/images/img_category2.webp";
-import img_category3 from "../../../assets/images/img_category3.webp";
-import img_category4 from "../../../assets/images/img_category4.webp";
+
 
 const OurCategory = () => {
   return (

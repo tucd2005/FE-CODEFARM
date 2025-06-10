@@ -1,6 +1,6 @@
 
 import { Link } from "react-router-dom";
-import img_order from "../../assets/images/img_order.webp";
+
 
 
 const OrderPage = () => {

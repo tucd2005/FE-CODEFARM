@@ -1,4 +1,4 @@
-import img_experience from "../assets/images/img_experience.webp";
+
 
 const Blog = () => {
   return (
