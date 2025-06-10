@@ -1,4 +1,3 @@
-
 import ico_star_active from "../../../assets/images/ico_star_active.png";
 import ico_eye from "../../../assets/images/ico_eye.png";
 import ico_fire from "../../../assets/images/ico_fire.png";
@@ -11,6 +10,7 @@ import ico_shipping2 from "../../../assets/images/ico_shipping2.png";
 import ico_heard from "../../../assets/images/ico_heart.png";
 import ico_reload from "../../../assets/images/ico_reload.png";
 import ico_share from "../../../assets/images/ico_share.png";
+import { Link } from "react-router-dom";
 const DetailProduct = () => {
   return (
     <>
@@ -35,18 +35,34 @@ const DetailProduct = () => {
           <div className="col-span-3 flex gap-3">
             <ul className="flex flex-col gap-4">
               <li className="w-[82px] cursor-pointer p-[10px] rounded-md border border-black hover:border-black transition-all">
-                <img className="image" src="public/images/detail6/2.jpg" alt="" />
+                <img
+                  className="image"
+                  src="public/images/detail6/2.jpg"
+                  alt=""
+                />
               </li>
               <li className="w-[82px] cursor-pointer p-[10px] rounded-md border border-transparent hover:border-black transition-all">
-                <img className="image" src="public/images/detail6/3.jpg" alt="" />
+                <img
+                  className="image"
+                  src="public/images/detail6/3.jpg"
+                  alt=""
+                />
               </li>
               <li className="w-[82px] cursor-pointer p-[10px] rounded-md border border-transparent hover:border-black transition-all">
-                <img className="image" src="public/images/detail6/4.jpg" alt="" />
+                <img
+                  className="image"
+                  src="public/images/detail6/4.jpg"
+                  alt=""
+                />
               </li>
             </ul>
             <div className="overflow-hidden">
               <div className="rounded-xl overflow-hidden">
-                <img src="public/images/detail6/1.jpg"className="image" alt="" />
+                <img
+                  src="public/images/detail6/1.jpg"
+                  className="image"
+                  alt=""
+                />
               </div>
             </div>
           </div>
@@ -126,13 +142,15 @@ const DetailProduct = () => {
                     <span className="text-2xl leading-[24px]">+</span>
                   </button>
                 </div>
+                <Link to="/order">
+                  <button
+                    type="button"
+                    className="h-[50px] bg-black text-white font-semibold text-sm px-4 flex-1 rounded-full hover:bg hover:bg-white border hover:border-black hover:text-black transition-all"
+                  >
+                    Add To Cart
+                  </button>
+                </Link>
 
-                <button
-                  type="button"
-                  className="h-[50px] bg-black text-white font-semibold text-sm px-4 flex-1 rounded-full hover:bg hover:bg-white border hover:border-black hover:text-black transition-all"
-                >
-                  Add To Cart
-                </button>
                 <button
                   type="button"
                   className="p-4 bg-white border border-[#e6e6e6] rounded-full"
