@@ -9,6 +9,7 @@ import Quanlibaiviet from "../pages/Admin/Quanlibaiviet";
 import Quanliquyen from "../pages/Admin/Quanliquyen";
 import CategoriesAdd from "../pages/Admin/categories/CategoriesAdd";
 import Quanlibienthe from "../pages/Admin/bienthe/Quanlibienthe";
+import ProductsAdd from "../pages/Admin/products/ProductsAdd";
 
 export const adminRouter = {
   path: "/admin",
@@ -17,6 +18,8 @@ export const adminRouter = {
     { path: "dashboard", element: <Dashboard /> },
     { path: "categories", element: <Categories /> },
     { path: "products", element: <Products /> },
+    { path: "products/add", element: <ProductsAdd /> },
+
     { path: "users", element: <Quanlinguoidung /> },
     { path: "orders", element: <Quanlidonhang /> },
     { path: "posts", element: <Quanlibaiviet /> },

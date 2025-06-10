@@ -1,7 +1,8 @@
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
-import { Table, Space } from 'antd';
+import { Table, Space, Button } from 'antd';
 import type { ColumnsType } from 'antd/es/table';
+import { Link } from 'react-router-dom';
 
 interface Product {
   id: number;
@@ -71,6 +72,7 @@ const Products: React.FC = () => {
       key: 'action',
       render: (_, record) => (
         <Space size="middle">
+          <a href="">Chi tiết</a>
           <a>Sửa</a>
           <a>Xoá</a>
         </Space>
@@ -80,8 +82,10 @@ const Products: React.FC = () => {
 
   return (
     <div>
-      <h2>Danh sách sản phẩm</h2>
-      <button className=''>Thêm sản phẩm</button>
+      <div className='flex justify-between items-center mb-4'>
+        <h2>Quản lý sản phẩm</h2>
+        <Button type='primary'><Link to={"add"}>Thêm sản phẩm</Link></Button>
+      </div>
       <Table
         loading={loading}
         dataSource={products}

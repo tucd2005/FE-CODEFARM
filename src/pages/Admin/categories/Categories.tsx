@@ -47,7 +47,7 @@ const Categories: React.FC = () => {
   return (
     <>
       <div className='flex justify-between items-center mb-4'>
-        <h2>Danh mục sản phẩm</h2>
+        <h2>Quản lý Danh mục</h2>
         <Button type='primary'><Link to={"add"}>Thêm danh mục</Link></Button>
       </div>
       <Table
